@@ -1,0 +1,353 @@
+/* import font family : Source Sans Pro Regular 400, Bold 700 */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+/* ~~~Header~~~ */
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    background: #363B4E;
+}
+
+header nav .logo {
+    color: white;
+    float: left;
+    padding: 10px 50px 10px 50px;
+    margin: 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 20px;
+}
+
+header nav ul li {
+    list-style: none;
+    position: relative;
+    padding: 15px 5px;
+    transition: 1s;
+    box-sizing: border-box;
+    border-right: 1px solid rgba(255,255,255,.2);
+}
+
+header nav ul li:hover {
+    background: #2196f3;
+}
+
+header nav ul li:last-child {
+    border-right: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    padding: 0 20px;
+    color: #fff;
+}
+
+header nav ul ul {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    background: #151515;
+    display: block;
+    width: 237px;
+    transition: top 1s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+header nav ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+header nav ul ul li {
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
+a[href^="#Basheeny"] {
+    color: violet;
+}
+
+a[href^="#Xiao"] {
+    color: greenyellow;
+}
+
+a[href^="#KaedeharaKazuha"] {
+    color: greenyellow;
+}
+
+a[href^="#Lunox"] {
+    background: -webkit-linear-gradient(15deg, yellow, purple);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+a[href^="#DarkNyx"] {
+    color: greenyellow;
+}
+
+a[href^="#FutureKnight"] {
+    color: rgb(218, 207, 207);
+}
+
+a[href^="#Sol"] {
+    color: violet;
+}
+
+/* ~~~Body~~~ */
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+main {
+    overflow: auto;
+}
+
+#home {
+    padding: 25px 0px 25px 0px;
+    float: center;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+h2 {
+    text-align: center;
+}
+
+#favouritecharacter {
+    padding: 25px 15px 25px 15px;
+    float: left;
+    width: 75%;
+}
+
+.fav-chara {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.custom {
+    width: 100%;
+    max-height: 700px;
+    object-position: center;
+}
+
+
+.text-home {
+    color: yellow;
+    position: absolute;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 2px;
+    line-height: 35px;
+    top: 55%;
+    right: 40%;
+}
+
+
+.first, .seventh {
+    color: violet;
+}
+
+.second, .third, .fifth {
+    color: greenyellow;
+}
+
+.fourth {
+    color: purple;
+}
+
+.sixth {
+    color: rgb(218, 207, 207);
+}
+
+p {
+    text-align: justify;
+    font-weight: normal;
+    background: linear-gradient(45deg, #000000, #616F39, #363B4E);
+    border-radius: 10px;
+    color: white;
+}
+
+.card1, .card7 {
+    background: linear-gradient(0deg, #6FE7DD, #3490DE, #6639A6, #521262);
+    box-shadow: 5px 5px 10px 0px violet;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.card2, .card3, .card5 {
+    background: linear-gradient(135deg, #0A043C, #03506F, #BBBBBB, #FFE3D8);
+    box-shadow: 5px 5px 10px 0px greenyellow;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.card4 {
+    background: linear-gradient(0deg, #000000, #52057B, #892CDC, #BBBBBB);
+    box-shadow: 5px 5px 10px 0px purple;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.card6 {
+    background: linear-gradient(180deg, #1f6174, #FF6F3C, #FF9A3C, #FFC93C);
+    box-shadow: 5px 5px 10px 0px rgb(172, 147, 147);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.element-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(90deg, purple, green, blue, orange, lightblue, greenyellow, yellow);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px 0px 20px 0px;
+}
+
+.element-item {
+    width: 1100px;
+    background-color: gray;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.element {
+    width: 100%;
+    max-height: 50px;
+    object-fit: contain;
+    flex-grow: 1;
+}
+
+/* ~~~Aside~~~ */
+
+aside {
+    float: right;
+    width: 23%;
+    background: linear-gradient(180deg, #7C83FD, #96BAFF, #7DEDFF, #88FFF7);
+    box-shadow: 5px 5px 10px 0px rgb(172, 147, 147);
+    border-radius: 10px;
+    padding: 5px 35px 5px 35px;
+    margin-top: 105px;
+    margin-bottom: 60px;
+}
+
+.profile {
+    width: 100%;
+    max-height: auto;
+    object-fit: contain;
+    object-position: center;
+    clip-path: circle();
+}
+
+.aboum {
+    text-align: center;
+    font-size: 30px;
+}
+
+aside header {
+    background: none;
+}
+
+.fcap {
+    text-align: center;
+}
+
+/* ~~~Footer~~~ */
+
+footer {
+    padding: 10px;
+    color: white;
+    background: #363B4E;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1000px){
+    header nav {
+        float: left;
+        width: 100%;
+        background: #363B4E;
+    }
+    header nav .logo {
+        padding-left: 30px;
+        width: 100%;
+    }
+    header nav ul{
+        margin-top: 50px;
+        display: block;
+    }
+    header nav ul li {
+        display: block;
+    }
+    header nav ul li ul {
+        width: 100%;
+        z-index: 1;
+    }
+
+    main,
+    #home,
+    #favouritecharacter,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+
+    /* compatible for pixel 2 xl, iphone x*/
+    .text-home {
+        line-height: 30px;
+        top: 45%;
+        right: 25%;
+        font-size: 20px;
+    }
+
+    .custom {
+        object-fit: contain;
+    }
+
+    .element-container {
+        background: linear-gradient(180deg, purple, green, blue, orange, lightblue, greenyellow, yellow);
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        padding: 10px;
+        margin: 30px 0px 30px 0px;
+    }
+
+    .element-item {
+        width: 100%;
+    }
+}
